@@ -1,0 +1,22 @@
+<div class="row container mb-5">
+    <div class="col">
+        <label class="control-label mb-1">Nome:</label>
+        <input class="form-control" type="text" [(ngModel)]="name" placeholder="Nome..."/>
+    </div>
+    
+    <div class="col">
+        <label class="control-label mb-1">Descrição:</label>
+        <input class="form-control" type="text" [(ngModel)]="description" placeholder="Descrição..."/>
+    </div>
+    
+    <div class="col-1 d-flex align-items-end">
+      <app-button
+      backgroundColor="#B469FF"
+      fontColor="white"
+      text="PESQUISAR"
+      (click)="pesquisar()" 
+    ></app-button>
+  </div>
+    
+</div>
+

@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-center"> 
+    <div class="search m-5 p-5 container flex-wrap">
+      <app-filter (filter)="resultadosFiltrados = $event"></app-filter>
+      <app-table [resultadosFiltrados]="resultadosFiltrados"></app-table>
+    </div>
+</div>

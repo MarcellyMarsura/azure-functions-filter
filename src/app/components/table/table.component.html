@@ -1,0 +1,19 @@
+<div *ngIf="resultadosFiltrados">
+  <table class="table table-hover text-center">
+    <thead>
+      <tr>
+        <th class="col-2">Id</th>
+        <th class="col-4">Nome</th>
+        <th class="col-6">Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let resultado of resultadosFiltrados">
+        <td>{{ resultado.id }}</td>
+        <td>{{ resultado.name }}</td>
+        <td>{{ resultado.description }}</td>
+        <!-- Para cada valor dentro do @Input recebido, irá criar uma linha na tabela com os valores-->
+      </tr>
+    </tbody>
+</table>
+</div>
